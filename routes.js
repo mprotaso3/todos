@@ -9,12 +9,12 @@ import todos from './todos';
 
 const router = createBrowserRouter(    
     createRoutesFromElements(        
-        <Route path='/' element={<>asdsadasd</>}>
-          {/* <Route
+        <Route path='/' element={<App/ >}>
+          <Route
               index={true}
               element={<TodoList list={todos} />}
           />
-          <Route path='add' element={<TodoAdd/>} /> */}
+          <Route path='add' element={<TodoAdd/>} />
         </Route>
     )
 );

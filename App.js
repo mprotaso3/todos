@@ -31,9 +31,13 @@ export default function App () {
       <nav className="navbar is-light">
         <div className="navbar-brand">
           <NavLink to='/' className={({isActive }) => 
-          'navbar-item is-uppercase' + (isActive ? 'is-active' : '')}>
-            Todos
-            </NavLink>
+            'navbar-item is-uppercase' + (isActive ? 'is-active' : '')}>
+            Главная
+          </NavLink>
+          <NavLink to='/add' className={({isActive }) => 
+            'navbar-item is-uppercase' + (isActive ? 'is-active' : '')}>
+            Добавить дело
+          </NavLink>
           <a href="/"
           className={showMenu ?
           'navbar-burger is active' :
